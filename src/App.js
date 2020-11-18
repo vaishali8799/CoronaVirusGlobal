@@ -8,8 +8,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 function App() {
   return (
     <Router basename="/global" >
-      
-      
       <Route path="/" exact component={Home}/>
       <Route path ="/dashboard" exact component={Dashboard}></Route>
       <Route path="/about" exact component={About}></Route>

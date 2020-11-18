@@ -1,5 +1,6 @@
 import React from 'react'
 import HomeNav from './HomeNav'
+import {Link} from 'react-router-dom'
 import './About.css'
 import {Animated} from "react-animated-css";
 
@@ -14,9 +15,9 @@ function About() {
                  
                     <div style={{display:'flex'}}>
                         <div className="icon">
-                            <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
-                        <div className="icon"><a href="https://www.twiter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
-                        <div className="icon"><a href="https://www.gmail.com/"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></div>
+                            <Link to="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></Link></div>
+                        <div className="icon"><Link to="https://www.twiter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></Link></div>
+                        <div className="icon"><Link to="https://www.gmail.com/"><i class="fa fa-envelope-o" aria-hidden="true"></i></Link></div>
                     </div>
                     <hr/>
                 </div>
