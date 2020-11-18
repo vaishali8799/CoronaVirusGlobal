@@ -1,0 +1,19 @@
+.card{
+    padding: 10px;
+    margin:10px 0;
+    box-shadow:1px 1px 9px 0px rgba(52, 50, 50, 0.75);
+    height: 400px;
+}
+.card:hover{
+    transform: scale(1.2);
+}
+.card-title{
+    font-weight: 15px;
+    font-weight: 500;
+}
+.card-text{
+    font-size: 14px;
+    font-family: ubuntu;
+    color: slategray;
+    
+}

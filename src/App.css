@@ -1,0 +1,231 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.app{
+  display: flex;
+  justify-content: space-evenly;
+}
+.left{
+  flex: 0.8;
+  margin-top: 20px;
+}
+.app_header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content:space-between;
+
+}
+.app_stats{
+  display: flex;
+  justify-content: space-between;
+
+}
+.right{
+  margin-top: 20px;
+}
+.right h3{
+  color: #070d59;
+  font-weight: 500;
+  font-size: 22px;
+}
+.table{
+  margin-top: 10px;
+  overflow-y: scroll;
+background-color: white;
+height: 920px;
+
+}
+.app_header  h2{
+  color: #070d59;
+  font-size: 35px;
+  margin-left: 10px;
+  
+
+}
+.map{
+  height: 500px;
+
+  background-color:rgb(252, 245, 245);
+  padding: 20px;
+  border-radius: 10px;
+
+   -webkit-box-shadow: 9px 6px 12px -3px rgba(168,158,168,1);
+  -moz-box-shadow: 9px 6px 12px -3px rgba(168,158,168,1);
+  box-shadow: 9px 6px 12px -3px rgba(168,158,168,1);;
+  
+}
+.map .leaflet-container{
+  height: 100%;
+}
+.chart{
+  margin-right: 20px;
+}
+.chart h3{
+  font-size: 20px;
+  font-weight: 500;
+  color: #070d59;
+}
+.chart-boxes{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.table  img{
+  height: 18px;
+  width: 22px;
+  margin-right: 4px ;
+}
+.table tr{
+  display: flex;
+  justify-content: space-between;
+}
+.table td{
+  padding: 5px;
+}
+.right tr{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.right td{
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.table tr:nth-of-type(odd) {
+  background-color:#aee6e6;
+  opacity: 0.9;
+}
+.info-box{
+  flex: 1;
+}
+.info-box:not(:last-child) {
+  margin-right: 10px;
+}
+.infobox_cases{
+  font-size: 25px !important;
+  font-weight: 500 !important;
+  color: rgb(56, 28, 3)  !important;
+  margin-bottom: 10px;
+  
+}
+.infobox_cases h2{
+  font-size: 26px;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem;
+  
+
+}
+.today{
+  color:#aaaaaa !important;
+}
+.todayBox:hover{
+  background: rgba(170,170,170,0.5);
+
+}
+
+.recovered{
+  color:#2ECC71 !important ;
+}
+.recoveredBox:hover{
+  background: rgba(46,204,113,0.5);
+}
+.deaths{
+  color:#fb4443 !important ;
+}
+.deathsBox:hover{
+  background: rgba(251,68,67,0.6);
+}
+.active{
+  color: #3498DB !important;
+}
+.activeBox:hover{
+  background: rgba(52,152,219,0.5);
+}
+.infobox_total{
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem;
+  color:#2c2c4e !important;
+}
+.group-buttons  button{
+  margin: 10px;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+@media (max-width:1336px){
+  .app{
+    flex-direction: column;
+  }
+  .chart-boxes{
+    flex-direction: column;
+  }
+  .info-box{
+    flex:2;
+  }
+  .map{
+    height: 300px;
+  }
+}
+@media (max-width:990px){
+  .app_stats{
+    flex-direction: column;
+  }
+}
+.navbar{
+  background:#070d59;
+  padding: 5px 40px;
+}
+.nav{
+  color: #fff;
+  margin-right: 20px;
+}
+.navbrand{
+  padding-top: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+.navbrand span{
+  color: #9ddfd3;
+  font-size: 16px;
+  margin-left: 20px;
+  top: -20px;
+  letter-spacing: 1rem;
+  position: relative;
+}
+
+.navlink{
+  text-decoration: none !important;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
+  margin-right: 40px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color:#fff !important ;
+}
+.navbar__link--active {
+  color:#9ddfd3 !important ;
+}
+.navlink:hover{
+  color:#9ddfd3 !important ;
+}
+.card{
+  padding: 10px;
+  margin:10px 0;
+  box-shadow:1px 1px 9px 0px rgba(52, 50, 50, 0.75);
+}
+.card-title{
+  font-weight: 15px;
+  font-weight: 500;
+}
+.card-text{
+  font-size: 14px;
+  font-family: ubuntu;
+  color: slategray;
+  
+}
